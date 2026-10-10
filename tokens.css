@@ -1,0 +1,92 @@
+/* Identité visuelle : Samuel ABENA, ingénieur IA
+   Parti pris : le site d'un ingénieur qui sait expliquer. La rigueur apprise au Japon,
+   la clarté d'un bon professeur, et le jaune de sa marque comme seul signe fort, réservé à l'action. */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  /* Accent : le jaune du logo (#FFCF00). Réservé aux boutons d'action et au repère rond. */
+  --accent-50:  #FFFBEB;
+  --accent-100: #FFF3C4;
+  --accent-200: #FFE685;
+  --accent-300: #FFDA47;
+  --accent-400: #FFCF00; /* le jaune du logo */
+  --accent-500: #F0BC00;
+  --accent-600: #D19F00;
+  --accent-700: #A67C00;
+  --accent-800: #7A5B05;
+  --accent-900: #4F3B08;
+  --accent-950: #2E2205;
+
+  /* Encre : le marine de sa marque (#1E2761). Texte, titres, bandeaux. */
+  --encre-50:  #F3F4FA;
+  --encre-100: #E4E7F3;
+  --encre-200: #C8CDE6;
+  --encre-300: #9CA4CF;
+  --encre-400: #6B75B0;
+  --encre-500: #444F91;
+  --encre-600: #2F3A7A;
+  --encre-700: #263069;
+  --encre-800: #1E2761; /* le marine de la marque */
+  --encre-900: #1B2150;
+  --encre-950: #0E1230;
+
+  /* Neutres : papier kraft chaud, teinté sur le jaune (assombri à la demande : « trop light ») */
+  --neutre-50:  #EFE9DD;
+  --neutre-100: #E5DDCD;
+  --neutre-200: #D9D0BE;
+  --neutre-300: #B8AD96;
+  --neutre-500: #8A8371;
+  --neutre-600: #545A78; /* texte doux, tiré vers l'encre */
+
+  /* Sens */
+  --succes: #2F7A4F;
+  --attention: #A67C00;
+  --erreur: #B3362B;
+
+  /* Rôles : ce que le code emploie */
+  --fond: var(--neutre-50);
+  --fond-alterne: var(--neutre-100);
+  --surface: #FFFFFF;
+  --texte: var(--encre-900);
+  --texte-doux: var(--neutre-600);
+  --titre: var(--encre-800);
+  --bordure: var(--neutre-200);
+  --bordure-forte: var(--neutre-300);
+  --bandeau: var(--encre-800);
+  --bandeau-texte: #FFFFFF;
+  --bandeau-texte-doux: var(--encre-200);
+  --action: var(--accent-400);
+  --action-survol: var(--accent-500);
+  --action-appui: var(--accent-600);
+  --action-texte: var(--encre-800);
+  --lien: var(--encre-700);
+  --focus: var(--encre-500);
+
+  /* Typographie */
+  --police-titre: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --police-texte: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --police-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --corps: 17px;
+  --ligne: 1.6;
+  --titre-1: clamp(2.25rem, 1.6rem + 3.2vw, 3.6rem);
+  --titre-2: clamp(1.75rem, 1.4rem + 1.6vw, 2.4rem);
+  --titre-3: 1.3rem;
+  --texte-grand: 1.2rem;
+  --petit: 0.88rem;
+  --etiquette: 0.78rem;
+
+  /* Formes et espace */
+  --rayon-petit: 4px;   /* boutons, badges */
+  --rayon-grand: 12px;  /* cartes, photo */
+  --pas: 8px;
+  --esp-1: 8px; --esp-2: 16px; --esp-3: 24px; --esp-4: 32px;
+  --esp-5: 48px; --esp-6: 64px; --esp-7: 96px;
+  --largeur-max: 1120px;
+  --largeur-texte: 64ch;
+  --hauteur-bouton: 48px;
+  --trait: 1px solid var(--bordure);
+  /* Séparation au trait : aucune ombre */
+
+  --duree: 150ms;
+}

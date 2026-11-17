@@ -221,5 +221,17 @@ p { text-wrap: pretty; }
 }
 
 .menu a, .marque span, .menu .btn { white-space: nowrap; }
-@media (min-width: 1100px) { .marque { margin-right: var(--esp-3); } }
-@media (min-width: 1100px) and (max-width: 1279px) { .menu, .menu.ouvert { gap: var(--esp-2); } }
+/* En-tête large : le nom respire, un trait le sépare du menu */
+@media (min-width: 1100px) {
+  .entete .conteneur { gap: var(--esp-5); }
+  .marque { flex-shrink: 0; }
+  .menu { font-size: .95rem; }
+  .menu, .menu.ouvert { gap: var(--esp-3); }
+  .menu a:first-child { position: relative; }
+  .menu::before { content: ""; width: 1.5px; height: 28px; background: var(--bordure-forte); margin-right: var(--esp-1); }
+}
+@media (min-width: 1100px) and (max-width: 1279px) {
+  .entete .conteneur { gap: var(--esp-4); }
+  .menu, .menu.ouvert { gap: 20px; }
+  .menu::before { display: none; }
+}

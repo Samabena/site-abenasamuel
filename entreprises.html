@@ -16,6 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vivant.css">
+<script>document.documentElement.classList.add("js")</script>
 <script src="menu.js" defer></script>
 </head>
 <body>
@@ -31,105 +33,125 @@
   </div>
 </header>
 <main id="contenu">
-<section class="bandeau sur-bandeau accroche accroche-page">
+
+<!-- 1. Haut de page -->
+<section class="bandeau sur-bandeau haut-vivant">
   <div class="conteneur">
     <div>
-      <p class="et">Pour les entreprises</p>
-      <h1>Une équipe d'agents IA, pendant que vous faites votre vrai métier</h1>
-      <p class="chapo">Des agents organisés comme un vrai service, installés sur votre ordinateur, qui préparent le travail et vous le soumettent.</p>
+      <p class="pastille entree">Pour les entreprises · La Box</p>
+      <h1 class="entree entree-2 h1-large">Une équipe d'agents IA, pendant que vous faites <em>votre vrai métier.</em></h1>
+      <p class="chapo entree entree-2">Des agents organisés comme un vrai service, installés sur votre ordinateur, qui préparent le travail et vous le soumettent.</p>
+      <div class="boutons entree entree-3">
+        <a class="btn btn-action" href="https://wa.me/2250596860943?text=Bonjour%20Samuel%2C%20je%20viens%20de%20votre%20site.%20J%27aimerais%20vous%20parler%20d%27un%20projet%20IA%20pour%20mon%20entreprise."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Parlons de votre projet</a>
+        <a class="btn btn-second" href="#departements">Voir les départements</a>
+      </div>
+      <p class="confiance entree entree-3"><span>Rien ne part sans vous</span><span>Vos données restent chez vous</span><span>En français</span></p>
     </div>
+    <div class="scene-cadre entree entree-2" aria-hidden="true"><div class="scene-box">
+      <div class="scene-tete"><span class="scene-point"></span>La Box · Marketing digital</div>
+      <p class="scene-objectif"><span class="et">Votre objectif</span>« Plus de messages WhatsApp cette semaine »</p>
+      <ol class="scene-taches">
+        <li><span>L'analyste lit les chiffres de la Page</span><b class="ok">Fait</b></li>
+        <li><span>Le copywriter écrit 3 publications</span><b class="ok">Fait</b></li>
+        <li><span>La graphiste prépare les visuels</span><b class="ok">Fait</b></li>
+        <li class="attente"><span>Publier les 3 posts</span><b>À valider</b></li>
+      </ol>
+      <div class="scene-bas"><span>Rien ne part sans vous</span><span class="scene-bouton">Valider</span></div>
+    </div></div>
   </div>
 </section>
 
+<!-- 2. Le principe -->
 <section class="section">
-  <div class="conteneur">
-    <div class="tete-section">
-      <p class="et">01 · La Box</p>
-      <h2>Des agents rangés en départements</h2>
-      <p>Chaque département a une responsable qui reçoit votre objectif, écrit le plan et répartit le travail entre les spécialistes. Vous, vous validez.</p>
+  <div class="conteneur constat">
+    <div class="revele">
+      <h2 class="grand-titre">Les agents préparent.<span>Vous validez.</span></h2>
+      <p class="sous-grand-titre">Chaque département a une responsable qui reçoit votre objectif, écrit le plan et répartit le travail entre les spécialistes. Trois engagements, dits franchement&nbsp;:</p>
     </div>
-    <div class="grille grille-2">
-      <article class="carte" id="marketing">
+    <ul class="douleurs regles-num revele">
+      <li><strong>Rien ne part sans vous.</strong> Les agents préparent, vous approuvez, ça part. Personne ne répond de travers pendant la nuit.</li>
+      <li><strong>Vos données restent chez vous.</strong> La Box tourne sur votre ordinateur. Vos clients, vos messages, vos chiffres ne partent nulle part.</li>
+      <li><strong>Un abonnement Claude.</strong> C'est le carburant des agents. Je vous accompagne pour le prendre.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. Les départements -->
+<section class="section section-alterne" id="departements">
+  <div class="conteneur">
+    <div class="tete-section revele">
+      <p class="et">La Box</p>
+      <h2>Deux départements, prêts à servir</h2>
+    </div>
+    <div class="deux-chemins">
+      <article class="chemin chemin-fonce revele" id="marketing">
         <p class="et">Département · 8 spécialistes</p>
         <h3>Marketing digital</h3>
         <p>Pour une Page qui vit tous les jours, même quand vous n'avez pas le temps.</p>
-        <ul>
-          <li>Une responsable marketing qui écrit le plan</li>
-          <li>Une analyste&nbsp;: les vrais chiffres de votre Page, jamais inventés</li>
-          <li>Un copywriter qui écrit dans votre voix</li>
-          <li>Une graphiste pour les visuels</li>
-          <li>Une community manager qui répond aux commentaires et messages</li>
-          <li>Une veilleuse qui regarde votre secteur</li>
-          <li>Un modérateur, jamais sans votre accord</li>
-          <li>Un ads manager&nbsp;: la publicité chiffrée avant de dépenser</li>
-        </ul>
-        <a class="lien-fleche" href="https://skul.abenasamuel.com/labox-cm">Voir La Box Marketing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <ul class="equipe"><li>Responsable marketing : écrit le plan</li><li>Analyste : les vrais chiffres, jamais inventés</li><li>Copywriter : écrit dans votre voix</li><li>Graphiste : les visuels</li><li>Community manager : commentaires et messages</li><li>Veilleuse : regarde votre secteur</li><li>Modérateur : jamais sans votre accord</li><li>Ads manager : la pub chiffrée avant de dépenser</li></ul>
+        <a class="chemin-vedette" href="https://skul.abenasamuel.com/labox-cm"><span class="et">La Box Marketing</span><strong>Voir le département</strong><span>sur la boutique <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
       </article>
-      <article class="carte" id="developpement">
+      <article class="chemin revele" id="developpement">
         <p class="et">Département · 12 postes</p>
         <h3>Développement d'applications</h3>
         <p>Comme une maison&nbsp;: les plans, les fondations, les murs, la réception, puis la remise des clés.</p>
-        <ul>
-          <li>Une chef d'atelier qui explique chaque étape en français simple</li>
-          <li>Business analyst, designer, ingénieure exigences</li>
-          <li>Product owner, architecte, tech lead</li>
-          <li>Développeuse (code livré avec ses tests)</li>
-          <li>Contrôle qualité et revue de code</li>
-          <li>Mise en ligne, bloquée si la revue de sécurité dit non</li>
-          <li>Gestion du changement&nbsp;: ce que coûte une idée, avant de décider</li>
-        </ul>
-        <a class="lien-fleche" href="https://skul.abenasamuel.com/labox-dev">Voir La Box Développement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <ul class="equipe"><li>Chef d'atelier : chaque étape en français simple</li><li>Business analyst, designer, ingénieure exigences</li><li>Product owner, architecte, tech lead</li><li>Développeuse : code livré avec ses tests</li><li>Contrôle qualité et revue de code</li><li>Mise en ligne, bloquée si la sécurité dit non</li><li>Gestion du changement : le coût d'une idée, avant de décider</li></ul>
+        <a class="btn btn-second" href="https://skul.abenasamuel.com/labox-dev">Voir La Box Développement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section section-alterne">
+<!-- 4. Agent Gate -->
+<section class="bandeau sur-bandeau section-gate" id="agent-gate">
   <div class="conteneur">
-    <div class="tete-section">
-      <p class="et">02 · Comment ça se passe</p>
-      <h2>Trois engagements, dits franchement</h2>
-    </div>
-    <div class="grille grille-3">
-      <div class="regle"><h3>Rien ne part sans vous</h3><p style="color:var(--texte-doux)">Les agents préparent, vous approuvez, ça part. Personne ne répond de travers pendant la nuit.</p></div>
-      <div class="regle"><h3>Vos données restent chez vous</h3><p style="color:var(--texte-doux)">La Box tourne sur votre ordinateur. Vos clients, vos messages, vos chiffres ne partent nulle part.</p></div>
-      <div class="regle"><h3>Un abonnement Claude</h3><p style="color:var(--texte-doux)">C'est le carburant des agents. Je vous accompagne pour le prendre.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="conteneur duo">
-    <div class="texte-long" id="agent-gate">
-      <p class="et">03 · Agent Gate</p>
+    <div class="tete-section revele">
+      <p class="et">Agent Gate</p>
       <h2>Un agent IA fiable, de la création à l'hébergement</h2>
-      <p>Un agent qui marche une fois en démonstration, tout le monde sait le faire. Agent Gate gère tout le chemin&nbsp;: <strong>créer</strong> l'agent, le <strong>tester</strong> sur de vraies demandes, le <strong>vérifier</strong>, puis l'<strong>héberger</strong> pour qu'il tourne même quand votre ordinateur est éteint, et le partager par un simple lien.</p>
-      <p><a class="lien-fleche" href="https://skul.abenasamuel.com/agent-gate-octobre">Découvrir Agent Gate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+      <p>Un agent qui marche une fois en démonstration, tout le monde sait le faire. Agent Gate gère tout le chemin, jusqu'à un agent qui tourne même quand votre ordinateur est éteint, et qu'on partage par un simple lien.</p>
     </div>
-    <div class="texte-long">
-      <p class="et">04 · Former vos équipes</p>
+    <ol class="gate-etapes">
+      <li class="revele"><span>01</span><strong>Créer</strong>l'agent, à partir de votre besoin</li>
+      <li class="revele"><span>02</span><strong>Tester</strong>sur de vraies demandes</li>
+      <li class="revele"><span>03</span><strong>Vérifier</strong>avant de le confier à quiconque</li>
+      <li class="revele"><span>04</span><strong>Héberger</strong>en ligne, ordinateur éteint</li>
+    </ol>
+    <p class="revele"><a class="btn btn-action" href="https://skul.abenasamuel.com/agent-gate-octobre">Découvrir Agent Gate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+  </div>
+</section>
+
+<!-- 5. Former vos équipes -->
+<section class="section">
+  <div class="conteneur former">
+    <div class="revele">
+      <p class="et">Former vos équipes</p>
       <h2>Vos équipes, à l'aise avec l'IA</h2>
-      <p>Je forme en français, sans jargon, à partir de vos vrais cas&nbsp;: comprendre l'IA, construire des agents, automatiser avec n8n, développer avec l'IA. Si quelqu'un ne comprend pas, je réexplique autrement.</p>
-      <p><a class="lien-fleche" href="atelier.html">L'atelier « L'IA au travail » <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
-      <p><a class="lien-fleche" href="formations.html">Voir les formations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+      <p class="sous-grand-titre">Je forme en français, sans jargon, à partir de vos vrais cas&nbsp;: comprendre l'IA, construire des agents, automatiser avec n8n, développer avec l'IA. Si quelqu'un ne comprend pas, je réexplique autrement.</p>
+      <a class="lien-fleche" href="formations.html">Voir les formations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
     </div>
+    <a class="chemin-vedette revele" href="atelier.html"><span class="et">Atelier en entreprise · Abidjan</span><strong>« L'IA au travail » : votre équipe s'en sert dès le lendemain</strong><span>150 000 F, jusqu'à 10 personnes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
   </div>
 </section>
 
+<!-- 6. Sur quoi ça repose -->
 <section class="section section-alterne">
-  <div class="conteneur">
-    <div class="tete-section">
-      <p class="et">05 · Sur quoi ça repose</p>
+  <div class="conteneur repose">
+    <figure class="portrait-live portrait-ceremonie revele">
+      <img src="images/samuel-naist-ceremonie.jpg" alt="Samuel ABENA à la cérémonie de remise des diplômes de NAIST, au Japon" width="1100" height="1393" loading="lazy">
+    </figure>
+    <div class="revele">
+      <p class="et">Sur quoi ça repose</p>
       <h2>Une formation d'ingénieur, pas un effet de mode</h2>
-    </div>
-    <div class="grille grille-3">
-      <article class="carte"><p class="et">Recherche</p><h3>IA appliquée à la médecine</h3><p>Master of Engineering in Information Science à NAIST, au Japon&nbsp;: un modèle de diffusion qui estime la teneur minérale des os à partir de radiographies.</p></article>
-      <article class="carte"><p class="et">Robotique</p><h3>Club de robotique et alerte ECG</h3><p>Responsable du club de robotique à l'Accra Institute of Technology ; projet de fin d'études&nbsp;: un appareil portable d'alerte ECG pour les personnes cardiaques.</p></article>
-      <article class="carte"><p class="et">Aujourd'hui</p><h3>AI Analyst à Abidjan</h3><p>Sur des projets d'ingénierie en intelligence artificielle, et membre bénévole d'un groupe de Smart Africa pour le déploiement de l'IA en Afrique.</p></article>
+      <ul class="douleurs repose-liste">
+        <li><strong>Recherche en IA appliquée à la médecine.</strong> Master of Engineering in Information Science à NAIST, au Japon&nbsp;: un modèle de diffusion qui estime la teneur minérale des os à partir de radiographies.</li>
+        <li><strong>Robotique et alerte ECG.</strong> Responsable du club de robotique à l'Accra Institute of Technology&nbsp;; projet de fin d'études&nbsp;: un appareil portable d'alerte ECG pour les personnes cardiaques.</li>
+        <li><strong>Aujourd'hui, AI Analyst à Abidjan.</strong> Sur des projets d'ingénierie en IA, et membre bénévole d'un groupe de Smart Africa pour le déploiement de l'IA en Afrique.</li>
+      </ul>
     </div>
   </div>
 </section>
 
+<!-- 7. Dernier appel -->
 <section class="appel bandeau sur-bandeau">
   <div class="conteneur">
     <h2>Parlons de ce que vous voulez confier à vos agents</h2>
@@ -141,6 +163,26 @@
   </div>
 </section>
 
+<div class="barre-mobile" aria-hidden="true">
+  <p><strong>Un projet IA ?</strong>réponse sur WhatsApp</p>
+  <a class="btn btn-action" href="https://wa.me/2250596860943?text=Bonjour%20Samuel%2C%20je%20viens%20de%20votre%20site.%20J%27aimerais%20vous%20parler%20d%27un%20projet%20IA%20pour%20mon%20entreprise." tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Écrire</a>
+</div>
+
+<script>
+(function () {
+  var els = document.querySelectorAll(".revele");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entrees) {
+      entrees.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("vu"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -10% 0px" });
+    els.forEach(function (el) { io.observe(el); });
+  } else { els.forEach(function (el) { el.classList.add("vu"); }); }
+  var barre = document.querySelector(".barre-mobile"), haut = document.querySelector(".haut-vivant");
+  if (barre && haut && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) { barre.classList.toggle("visible", !e[0].isIntersecting); }).observe(haut);
+  }
+})();
+</script>
 </main>
 <footer class="pied bandeau sur-bandeau">
   <div class="conteneur">

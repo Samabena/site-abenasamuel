@@ -212,3 +212,69 @@
   .constat:has(.regles-num) { grid-template-columns: 1.15fr 1fr; align-items: center; }
   .constat:has(.regles-num) .grand-titre { font-size: clamp(2.6rem, 1.6rem + 2.6vw, 3.8rem); }
 }
+
+/* ======================= Entreprises ======================= */
+/* Scène du haut : un département au travail */
+.scene-cadre { position: relative; justify-self: center; width: 100%; max-width: 440px; margin: var(--esp-3) var(--esp-1) var(--esp-2); }
+.scene-cadre::before { content: ""; position: absolute; width: 140px; height: 140px; border-radius: 50%; background: var(--action); top: -40px; right: -32px; }
+.scene-cadre::after { content: ""; position: absolute; inset: 18px -14px -14px 18px; border: 1.5px solid var(--encre-400); border-radius: var(--rayon-grand); }
+.scene-box {
+  position: relative; z-index: 1;
+  background: var(--surface); color: var(--texte); border-radius: var(--rayon-grand); padding: var(--esp-3);
+  display: grid; gap: var(--esp-2);
+}
+.scene-tete { display: flex; align-items: center; gap: 8px; font: 500 var(--etiquette)/1 var(--police-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--texte-doux); }
+.scene-point { width: 8px; height: 8px; border-radius: 50%; background: var(--succes); }
+.scene-objectif { display: grid; gap: 4px; font: 500 1.15rem/1.3 var(--police-titre); color: var(--titre); }
+.scene-taches { list-style: none; padding: 0; display: grid; gap: 6px; counter-reset: t; }
+.scene-taches li { display: flex; align-items: center; gap: var(--esp-1); padding: 10px 12px; border-radius: var(--rayon-petit); background: var(--fond-alterne); font-size: var(--petit); }
+.scene-taches li span { flex: 1; }
+.scene-taches b { font: 500 var(--etiquette)/1 var(--police-mono); text-transform: uppercase; letter-spacing: .05em; padding: 5px 8px; border-radius: 999px; background: var(--accent-100); color: var(--accent-900); white-space: nowrap; }
+.scene-taches b.ok { background: transparent; color: var(--succes); padding-right: 0; }
+.scene-taches b.ok::before { content: "✓ "; }
+.scene-taches li.attente { background: var(--accent-50); border: 1px solid var(--accent-200); }
+.scene-bas { display: flex; align-items: center; justify-content: space-between; gap: var(--esp-1); font-size: var(--petit); color: var(--texte-doux); }
+.scene-bouton { background: var(--action); color: var(--encre-950); font-weight: 600; padding: 10px 18px; border-radius: var(--rayon-petit); }
+.js .scene-taches li { animation: tache-arrive 500ms ease both; }
+.scene-taches li:nth-child(2) { animation-delay: 350ms; }
+.scene-taches li:nth-child(3) { animation-delay: 700ms; }
+.scene-taches li:nth-child(4) { animation-delay: 1050ms; }
+@keyframes tache-arrive { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: none; } }
+.js .scene-bouton { animation: bouton-pouls 2.4s ease-in-out 1.6s infinite; }
+@keyframes bouton-pouls { 0%, 100% { box-shadow: 0 0 0 0 var(--accent-300); } 50% { box-shadow: 0 0 0 6px transparent; } }
+@media (prefers-reduced-motion: reduce) { .js .scene-taches li, .js .scene-bouton { animation: none; } }
+
+/* L'équipe d'un département, en étiquettes */
+.equipe { list-style: none; padding: 0 !important; display: flex; flex-wrap: wrap; gap: 8px; margin: var(--esp-1) 0 var(--esp-2); }
+.equipe li { font-size: var(--petit); line-height: 1.35; padding: 8px 12px; border-radius: var(--rayon-petit); background: var(--fond-alterne); color: var(--texte); }
+.chemin-fonce .equipe li { background: var(--encre-700); color: var(--bandeau-texte); }
+.chemin > p:not(.et) { color: var(--texte-doux); }
+.chemin-fonce > p:not(.et) { color: var(--bandeau-texte-doux); }
+
+/* Agent Gate en quatre temps */
+.section-gate { padding: var(--esp-6) 0; }
+.section-gate .tete-section p:not(.et) { color: var(--bandeau-texte-doux); }
+.section-gate .et { color: var(--accent-300); }
+.gate-etapes { list-style: none; padding: 0; display: grid; gap: var(--esp-3); margin: var(--esp-4) 0; }
+@media (min-width: 760px) { .gate-etapes { grid-template-columns: repeat(4, 1fr); } }
+.gate-etapes li { border-top: 3px solid var(--action); padding-top: var(--esp-2); color: var(--bandeau-texte-doux); display: grid; gap: 4px; }
+.gate-etapes span { font: 500 var(--etiquette)/1 var(--police-mono); color: var(--accent-300); }
+.gate-etapes strong { font: 700 clamp(1.8rem, 1.4rem + 1.4vw, 2.4rem)/1.1 var(--police-titre); color: var(--bandeau-texte); }
+
+/* Former vos équipes */
+.former { display: grid; gap: var(--esp-4); }
+@media (min-width: 900px) { .former { grid-template-columns: 1.1fr 1fr; align-items: center; gap: var(--esp-6); } }
+.former .chemin-vedette { padding: var(--esp-4); }
+.former .chemin-vedette strong { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+
+/* Sur quoi ça repose */
+.repose { display: grid; gap: var(--esp-5); align-items: center; }
+@media (min-width: 900px) { .repose { grid-template-columns: .9fr 1.1fr; gap: var(--esp-6); } }
+.portrait-ceremonie { margin: 0 var(--esp-2) var(--esp-2) 0; max-width: 440px; justify-self: center; }
+.portrait-ceremonie::before { display: none; }
+.portrait-ceremonie img { aspect-ratio: 4 / 5; object-position: center 40%; }
+.repose h2 { margin: var(--esp-1) 0 var(--esp-3); }
+.repose-liste li { font-size: 1rem !important; color: var(--texte-doux) !important; font-weight: 400 !important; }
+.repose-liste li strong { display: block; color: var(--titre); font: 500 1.15rem/1.3 var(--police-titre); margin-bottom: 4px; }
+.haut-vivant h1.h1-large { max-width: 18ch; }
+.section-gate h2 { color: var(--bandeau-texte); }

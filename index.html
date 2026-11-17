@@ -16,6 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vivant.css">
+<script>document.documentElement.classList.add("js")</script>
 <script src="menu.js" defer></script>
 </head>
 <body>
@@ -31,94 +33,106 @@
   </div>
 </header>
 <main id="contenu">
-<section class="bandeau sur-bandeau accroche">
+
+<!-- 1. Haut de page -->
+<section class="bandeau sur-bandeau haut-vivant">
   <div class="conteneur">
     <div>
-      <p class="et">Ingénieur IA · Abidjan</p>
-      <h1>J'explique l'IA, et je la mets au travail.</h1>
-      <p class="chapo">Des équipes d'agents IA prêtes à servir votre entreprise, et des formations en français, sans jargon. Formé au Ghana et au Japon, installé à Abidjan.</p>
-      <div class="boutons">
+      <p class="pastille entree">Ingénieur IA · Abidjan</p>
+      <h1 class="entree entree-2">J'explique l'IA, et je la <em>mets au travail.</em></h1>
+      <p class="chapo entree entree-2">Des équipes d'agents IA prêtes à servir votre entreprise, et des formations en français, sans jargon. Formé au Ghana et au Japon, installé à Abidjan.</p>
+      <div class="boutons entree entree-3">
         <a class="btn btn-action" href="https://wa.me/2250596860943?text=Bonjour%20Samuel%2C%20je%20viens%20de%20votre%20site.%20J%27aimerais%20vous%20parler%20d%27un%20projet%20IA%20pour%20mon%20entreprise."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Parlons de votre projet</a>
         <a class="btn btn-second" href="formations.html">Voir les formations</a>
       </div>
+      <p class="confiance entree entree-3"><span>En français, sans jargon</span><span>Rien ne part sans votre accord</span><span>Vos données restent chez vous</span></p>
     </div>
-    <figure class="accroche-photo">
+    <figure class="portrait-live portrait-naist entree entree-2">
+      <span class="badge-live badge-calme">NAIST · Japon · 2025</span>
       <img src="images/samuel-naist-portrait.jpg" alt="Samuel ABENA, diplôme en main, à la cérémonie de remise des diplômes de NAIST au Japon" width="900" height="1125">
-      <figcaption>Remise des diplômes, NAIST (Japon), 2025</figcaption>
+      <p class="puce-chiffre puce-1"><strong>477</strong>clients sur sa boutique de formations</p>
+      <p class="puce-chiffre puce-2"><strong>5 100+</strong>abonnés sur sa Page</p>
     </figure>
   </div>
 </section>
 
+<!-- 2. Ce qui me distingue -->
 <section class="section">
-  <div class="conteneur">
-    <div class="tete-section">
-      <p class="et">01 · Pour les entreprises</p>
-      <h2>Des agents IA rangés en départements, prêts à servir</h2>
-      <p>Pas un chatbot de plus&nbsp;: des collègues numériques à qui l'on confie des tâches, installés chez vous, qui ne publient rien sans votre accord.</p>
+  <div class="conteneur constat">
+    <div class="revele">
+      <h2 class="grand-titre">Savoir une chose.<span>Savoir l'expliquer.</span></h2>
+      <p class="sous-grand-titre">Ce sont deux compétences différentes. J'ai appris l'ingénierie en anglais au Ghana, puis l'IA au Japon. J'ai été l'étudiant qui n'ose pas dire qu'il est perdu. Depuis, rendre les choses évidentes est mon métier.</p>
+      <a class="lien-fleche" href="parcours.html">Lire mon parcours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
     </div>
-    <div class="grille grille-3">
-      <article class="carte">
-        <p class="et">La Box · 8 agents</p>
-        <h3>Département Marketing digital</h3>
-        <p>Une équipe qui fait vivre votre Page&nbsp;: chiffres réels, publications, visuels, réponses aux clients, veille, modération et publicité chiffrée avant de dépenser.</p>
-        <a class="lien-fleche" href="entreprises.html#marketing">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      </article>
-      <article class="carte">
-        <p class="et">La Box · 12 postes</p>
-        <h3>Département Développement d'applications</h3>
-        <p>De l'idée à l'application livrée, dans les règles du métier&nbsp;: cadrage, design, exigences, architecture, code testé, contrôle qualité, mise en ligne.</p>
-        <a class="lien-fleche" href="entreprises.html#developpement">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      </article>
-      <article class="carte">
-        <p class="et">Plateforme</p>
-        <h3>Agent Gate</h3>
-        <p>La plateforme qui gère un agent IA de A à Z&nbsp;: création, tests, vérification et hébergement. Un agent fiable, en ligne, qui tourne même ordinateur éteint.</p>
-        <a class="lien-fleche" href="entreprises.html#agent-gate">En savoir plus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      </article>
-    </div>
+    <ul class="douleurs regles-num revele">
+      <li><strong>En français.</strong> Pas de traduction approximative, pas de « regardez la vidéo anglaise ».</li>
+      <li><strong>Sans jargon.</strong> Chaque notion difficile passe par une image que vous connaissez déjà.</li>
+      <li><strong>Vous gardez la main.</strong> Mes agents préparent, vous validez. Vos données restent chez vous.</li>
+    </ul>
   </div>
 </section>
 
+<!-- 3. Deux façons de travailler ensemble -->
 <section class="section section-alterne">
-  <div class="conteneur distingue">
-    <div>
-      <p class="et" style="margin-bottom:16px">02 · Ce qui me distingue</p>
-      <p class="citation">Savoir une chose et savoir l'expliquer sont deux compétences différentes.</p>
-      <p style="margin-top:24px;color:var(--texte-doux);max-width:46ch">J'ai appris l'ingénierie informatique en anglais au Ghana, puis l'IA au Japon. J'ai été l'étudiant qui n'ose pas dire qu'il est perdu. Depuis, rendre les choses évidentes est mon métier.</p>
-      <a class="lien-fleche" href="parcours.html" style="margin-top:8px">Lire mon parcours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-    </div>
-    <div class="regles">
-      <div class="regle"><h3>En français</h3><p>Pas de traduction approximative, pas de «&nbsp;regardez la vidéo anglaise&nbsp;». Entièrement en français.</p></div>
-      <div class="regle"><h3>Sans jargon</h3><p>Chaque notion difficile passe par une image que vous connaissez déjà. Les termes techniques viennent après.</p></div>
-      <div class="regle"><h3>Vous gardez la main</h3><p>Mes agents préparent, vous validez. Rien ne part sans votre accord, et vos données restent chez vous.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="bandeau chiffres">
   <div class="conteneur">
-    <div><p class="chiffre">477</p><p>clients sur ma boutique de formations</p></div>
-    <div><p class="chiffre">307</p><p>inscrits aux Rendez-vous AI Builders</p></div>
-    <div><p class="chiffre">2</p><p>départements d'agents IA prêts à servir</p></div>
+    <div class="tete-section revele">
+      <p class="et">Deux façons de travailler avec moi</p>
+      <h2>Pour votre entreprise, ou pour vous former</h2>
+    </div>
+    <div class="deux-chemins">
+      <article class="chemin chemin-fonce revele">
+        <p class="et">Pour les entreprises</p>
+        <h3>Des agents IA rangés en départements, prêts à servir</h3>
+        <ul class="chemin-liste">
+          <li><a href="entreprises.html#marketing"><span><strong>Département Marketing digital</strong>8 agents qui font vivre votre Page, de la publication à la pub chiffrée</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+          <li><a href="entreprises.html#developpement"><span><strong>Département Développement d'applications</strong>12 postes, de l'idée à l'application livrée et testée</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+          <li><a href="entreprises.html#agent-gate"><span><strong>Agent Gate</strong>un agent IA créé, vérifié et hébergé, qui tourne ordinateur éteint</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+        </ul>
+        <a class="chemin-vedette" href="atelier.html"><span class="et">Nouveau · Atelier en entreprise</span><strong>L'IA au travail, en une demi-journée</strong><span>150 000 F, jusqu'à 10 personnes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      </article>
+      <article class="chemin revele">
+        <p class="et">Pour apprendre</p>
+        <h3>Des formations pour construire, pas pour regarder</h3>
+        <ul class="chemin-liste">
+          <li><a href="https://skul.abenasamuel.com/introduction-a-l-intelligence-artificielle"><span><strong>L'IA expliquée simplement, de zéro</strong>comprendre ce qu'est vraiment l'IA, sans prérequis</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+          <li><a href="https://skul.abenasamuel.com/formation-dev"><span><strong>Développer une application avec des agents IA</strong>de l'idée à la mise en ligne, avec Sensei</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+          <li><a href="https://skul.abenasamuel.com/lives"><span><strong>Les Rendez-vous AI Builders</strong>gratuit : apprendre et construire ensemble, en direct</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
+        </ul>
+        <a class="btn btn-second" href="formations.html">Toutes les formations</a>
+      </article>
+    </div>
   </div>
 </section>
 
+<!-- 4. Les chiffres -->
+<section class="bandeau sur-bandeau chiffres-grands">
+  <div class="conteneur">
+    <div class="revele"><p class="chiffre-geant">477</p><p>clients sur ma boutique de formations</p></div>
+    <div class="revele"><p class="chiffre-geant">359</p><p>membres apprennent l'IA dans mon groupe</p></div>
+    <div class="revele"><p class="chiffre-geant">5 100+</p><p>abonnés sur ma Page Facebook</p></div>
+  </div>
+</section>
+
+<!-- 5. Les vrais messages (accord de M. Berto et de Mael à obtenir) -->
 <section class="section">
   <div class="conteneur">
-    <div class="tete-section">
-      <p class="et">03 · Pour apprendre</p>
-      <h2>Des formations pour construire, pas pour regarder</h2>
-      <p>Agents IA, automatisation avec n8n, développement d'applications avec l'IA&nbsp;: vous repartez avec quelque chose que vous avez construit vous-même.</p>
+    <div class="tete-section revele">
+      <p class="et">Les vrais messages</p>
+      <h2>Ce qu'ils m'écrivent, tels quels</h2>
+      <p>Des personnes qui ont suivi mes formations et utilisent mes agents. Captures de WhatsApp et de Facebook, sans retouche.</p>
     </div>
-    <div class="grille grille-3">
-      <article class="carte"><p class="et">Débuter</p><h3>L'IA expliquée simplement, de zéro</h3><p>Comprendre ce qu'est vraiment l'IA, sans prérequis.</p><a class="lien-fleche" href="https://skul.abenasamuel.com/introduction-a-l-intelligence-artificielle">Voir la formation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></article>
-      <article class="carte"><p class="et">Construire</p><h3>Développer une application avec des agents IA</h3><p>De l'idée à la mise en ligne, avec Sensei, l'assistant réservé aux élèves.</p><a class="lien-fleche" href="https://skul.abenasamuel.com/formation-dev">Voir la formation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></article>
-      <article class="carte"><p class="et">Gratuit</p><h3>Les Rendez-vous AI Builders</h3><p>Des échanges concrets pour apprendre et construire ensemble.</p><a class="lien-fleche" href="https://skul.abenasamuel.com/lives">S'inscrire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></article>
+    <p class="glisser">Faites glisser pour voir les autres messages →</p>
+    <div class="captures captures-accueil">
+<figure class="capture"><a href="images/retour-berto-application.jpg" target="_blank" rel="noopener"><img src="images/retour-berto-application.jpg" alt="Capture d'écran : message de M. Berto" width="900" height="1055" loading="lazy"></a><figcaption><strong>M. Berto</strong> : construit l'application de devis de son entreprise avec les agents.</figcaption></figure>
+<figure class="capture"><a href="images/retour-mael.jpg" target="_blank" rel="noopener"><img src="images/retour-mael.jpg" alt="Capture d'écran : message de Mael" width="900" height="603" loading="lazy"></a><figcaption><strong>Mael</strong> : « rendre les choses complexes très simples au non technique ».</figcaption></figure>
+<figure class="capture"><a href="images/retour-facebook-formation.jpg" target="_blank" rel="noopener"><img src="images/retour-facebook-formation.jpg" alt="Capture d'écran : message de Kadjo et Sulamite" width="900" height="853" loading="lazy"></a><figcaption><strong>Kadjo et Sulamite</strong> : commentaires publics après une formation.</figcaption></figure>
+<figure class="capture"><a href="images/retour-en-avance.jpg" target="_blank" rel="noopener"><img src="images/retour-en-avance.jpg" alt="Capture d'écran : message de Un membre" width="900" height="327" loading="lazy"></a><figcaption><strong>Un membre</strong> : après le live du 8 novembre.</figcaption></figure>
+<figure class="capture"><a href="images/retour-facebook-bon.jpg" target="_blank" rel="noopener"><img src="images/retour-facebook-bon.jpg" alt="Capture d'écran : message de Louis" width="900" height="218" loading="lazy"></a><figcaption><strong>Louis</strong> : commentaire public sur Facebook.</figcaption></figure>
     </div>
-    <p style="margin-top:32px"><a class="btn btn-second" href="formations.html">Toutes les formations</a></p>
   </div>
 </section>
 
+<!-- 6. Dernier appel -->
 <section class="appel bandeau sur-bandeau">
   <div class="conteneur">
     <h2>Un projet IA pour votre entreprise&nbsp;?</h2>
@@ -130,6 +144,26 @@
   </div>
 </section>
 
+<div class="barre-mobile" aria-hidden="true">
+  <p><strong>Un projet IA ?</strong>réponse sur WhatsApp</p>
+  <a class="btn btn-action" href="https://wa.me/2250596860943?text=Bonjour%20Samuel%2C%20je%20viens%20de%20votre%20site.%20J%27aimerais%20vous%20parler%20d%27un%20projet%20IA%20pour%20mon%20entreprise." tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Écrire</a>
+</div>
+
+<script>
+(function () {
+  var els = document.querySelectorAll(".revele");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entrees) {
+      entrees.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("vu"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -10% 0px" });
+    els.forEach(function (el) { io.observe(el); });
+  } else { els.forEach(function (el) { el.classList.add("vu"); }); }
+  var barre = document.querySelector(".barre-mobile"), haut = document.querySelector(".haut-vivant");
+  if (barre && haut && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) { barre.classList.toggle("visible", !e[0].isIntersecting); }).observe(haut);
+  }
+})();
+</script>
 </main>
 <footer class="pied bandeau sur-bandeau">
   <div class="conteneur">

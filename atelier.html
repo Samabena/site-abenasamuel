@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="atelier.css">
+<link rel="stylesheet" href="vivant.css">
 <script>document.documentElement.classList.add("js")</script>
 <script src="menu.js" defer></script>
 </head>
@@ -35,7 +35,7 @@
 <main id="contenu">
 
 <!-- 1. Haut de page -->
-<section class="bandeau sur-bandeau atelier-haut">
+<section class="bandeau sur-bandeau haut-vivant">
   <div class="conteneur">
     <div>
       <p class="pastille entree">Atelier en entreprise · Abidjan</p>
@@ -248,7 +248,7 @@
     }, { rootMargin: "0px 0px -10% 0px" });
     els.forEach(function (el) { io.observe(el); });
   } else { els.forEach(function (el) { el.classList.add("vu"); }); }
-  var barre = document.querySelector(".barre-mobile"), haut = document.querySelector(".atelier-haut");
+  var barre = document.querySelector(".barre-mobile"), haut = document.querySelector(".haut-vivant");
   if (barre && haut && "IntersectionObserver" in window) {
     new IntersectionObserver(function (e) { barre.classList.toggle("visible", !e[0].isIntersecting); }).observe(haut);
   }

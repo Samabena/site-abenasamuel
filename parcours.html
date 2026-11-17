@@ -16,6 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vivant.css">
+<script>document.documentElement.classList.add("js")</script>
 <script src="menu.js" defer></script>
 </head>
 <body>
@@ -31,57 +33,71 @@
   </div>
 </header>
 <main id="contenu">
-<section class="bandeau sur-bandeau accroche accroche-page">
+
+<!-- 1. Haut de page -->
+<section class="bandeau sur-bandeau haut-vivant">
   <div class="conteneur">
     <div>
-      <p class="et">Parcours</p>
-      <h1>De la Côte d'Ivoire au Japon, puis retour à Abidjan</h1>
-      <p class="chapo">Ingénieur IA, formateur et chercheur. Ce que j'ai appris, et où je l'ai appris.</p>
+      <p class="pastille entree">Parcours</p>
+      <h1 class="entree entree-2 h1-large">De la Côte d'Ivoire au Japon, <em>puis retour à Abidjan.</em></h1>
+      <p class="chapo entree entree-2">Ingénieur IA, formateur et chercheur. Voici où j'ai appris.</p>
+      <div class="boutons entree entree-3">
+        <a class="btn btn-action" href="https://wa.me/2250596860943?text=Bonjour%20Samuel%2C%20je%20viens%20de%20votre%20site."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>M'écrire</a>
+        <a class="btn btn-second" href="https://www.linkedin.com/in/samuel-kpalemon/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>Mon LinkedIn</a>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="conteneur duo">
-    <figure>
-      <img src="images/samuel-naist-ceremonie.jpg" alt="Samuel ABENA sur la scène de la cérémonie de remise des diplômes de NAIST, devant le drapeau japonais et le logo de l'université" width="1100" height="1393" loading="lazy">
-      <figcaption>Cérémonie de remise des diplômes, Nara Institute of Science and Technology, 2025.</figcaption>
+    <figure class="portrait-live portrait-naist entree entree-2">
+      <span class="badge-live badge-calme">NAIST · Nara · 2025</span>
+      <img src="images/samuel-naist-ceremonie.jpg" alt="Samuel ABENA sur la scène de la cérémonie de remise des diplômes de NAIST, devant le drapeau japonais et le logo de l'université" width="1100" height="1393">
+      <p class="puce-chiffre puce-1"><strong>JICA</strong>boursier 2023</p>
+      <p class="puce-chiffre puce-2"><strong>Master</strong>of Engineering</p>
     </figure>
-    <div class="texte-long">
-      <p class="et">L'histoire</p>
-      <h2>J'ai été celui qui ne comprenait pas</h2>
-      <p>Au Ghana, j'étais francophone dans un cours d'ingénierie informatique donné en anglais. Je ne levais pas la main&nbsp;: je notais le mot dans un coin et je passais mes soirées à rattraper.</p>
-      <p>Au Japon, pour mon master, mes professeurs connaissaient parfaitement les réponses, mais ne trouvaient pas les mots simples pour me les donner.</p>
-      <p>J'ai compris une chose que je n'ai plus oubliée&nbsp;: <strong>savoir une chose et savoir l'expliquer sont deux compétences différentes.</strong> Rendre les choses évidentes est un vrai métier. C'est celui que j'ai choisi.</p>
-    </div>
   </div>
 </section>
 
+<!-- 2. L'histoire -->
+<section class="section">
+  <div class="conteneur constat">
+    <h2 class="grand-titre revele">J'ai été celui<span>qui ne comprenait pas.</span></h2>
+    <ul class="faits faits-grands revele">
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg></span><span><strong>Au Ghana</strong>francophone dans un cours d'ingénierie en anglais. Je rattrapais le soir.</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span><strong>Au Japon</strong>mes professeurs savaient, mais sans les mots simples.</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2Z"/></svg></span><span><strong>La leçon</strong>savoir et expliquer sont deux métiers. J'ai choisi le second.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. La frise -->
 <section class="section section-alterne">
   <div class="conteneur">
-    <div class="tete-section">
+    <div class="tete-section revele">
       <p class="et">Les étapes</p>
-      <h2>Le chemin, étape par étape</h2>
+      <h2>Le chemin, en six arrêts</h2>
     </div>
-    <ol class="frise">
-      <li><p class="et">Les débuts</p><h3>Abidjan, Université Nangui Abrogoua</h3><p>Trois mois en faculté de médecine, puis un choix&nbsp;: partir au Ghana et tout reprendre par l'anglais.</p></li>
-      <li><p class="et">Ghana</p><h3>L'anglais, le design, puis l'ingénierie</h3><ul><li>Apprentissage de l'anglais au CELPS</li><li>Design graphique et web à l'IPMC</li><li>Licence en ingénierie informatique, Accra Institute of Technology</li><li>Assistant d'enseignement, responsable du club de robotique</li><li>Projet de fin d'études&nbsp;: un appareil portable d'alerte ECG pour les personnes cardiaques</li></ul></li>
-      <li><p class="et">Entreprendre</p><h3>Cofondateur de DEAP INNOV</h3><p>Freelance en marketing digital, puis une startup qui aide les entreprises ivoiriennes à grandir en ligne.</p></li>
-      <li><p class="et">2023</p><h3>Bourse ABE Initiative de la JICA</h3><p>Lauréat de la bourse de l'agence japonaise de coopération internationale, pour étudier au Japon.</p></li>
-      <li><p class="et">2024 – 2025</p><h3>Master of Engineering in Information Science, NAIST</h3><p>Recherche au laboratoire Computational Systems Biology&nbsp;: un modèle de diffusion qui estime la teneur minérale des os à partir de radiographies, avec mesure de l'incertitude.</p></li>
-      <li><p class="et">Aujourd'hui</p><h3>Ingénieur IA à Abidjan</h3><ul><li>AI Analyst sur des projets d'ingénierie en intelligence artificielle</li><li>Créateur de La Box, d'Agent Gate et de Sensei</li><li>Formateur&nbsp;: 477 clients sur la boutique, 307 inscrits aux Rendez-vous AI Builders</li><li>Auteur de <em>L'application d'Adjoua</em> et de <em>L'IA qui agit</em></li><li>Membre bénévole d'un groupe de Smart Africa pour le déploiement de l'IA en Afrique</li></ul></li>
+    <ol class="frise-vive">
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 13v2a5 5 0 0 0 10 0v-3"/><circle cx="19" cy="10" r="2"/></svg></span><div><p class="frise-quand">Les débuts · Abidjan</p><h3>Université Nangui Abrogoua</h3><p>Trois mois de médecine, puis un choix : partir.</p></div></li>
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg></span><div><p class="frise-quand">Ghana</p><h3>L'anglais, puis l'ingénierie</h3><p>Licence en ingénierie informatique, Accra Institute of Technology.</p><details><summary>Le détail</summary><ul><li>Anglais au CELPS</li><li>Design graphique et web à l'IPMC</li><li>Assistant d'enseignement, responsable du club de robotique</li><li>Projet de fin d'études : un appareil portable d'alerte ECG pour les personnes cardiaques</li></ul></details></div></li>
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0"/><path d="M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></svg></span><div><p class="frise-quand">Entreprendre</p><h3>Cofondateur de DEAP INNOV</h3><p>Une startup qui aide les entreprises ivoiriennes à grandir en ligne.</p></div></li>
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg></span><div><p class="frise-quand">2023</p><h3>Bourse ABE Initiative de la JICA</h3><p>Lauréat de la bourse japonaise, pour étudier au Japon.</p></div></li>
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><div><p class="frise-quand">2024 – 2025</p><h3>Master of Engineering, NAIST</h3><p>Recherche : estimer la teneur minérale des os à partir de radiographies, avec l'IA.</p></div></li>
+      <li class="revele"><span class="ico ico-grand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><p class="frise-quand">Aujourd'hui</p><h3>Ingénieur IA à Abidjan</h3><p>AI Analyst, formateur, auteur, créateur de La Box.</p><details><summary>Le détail</summary><ul><li>AI Analyst sur des projets d'ingénierie en IA</li><li>Créateur de La Box, d'Agent Gate et de Sensei</li><li>Formateur : 477 clients sur la boutique</li><li>Auteur de <em>L'application d'Adjoua</em> et de <em>L'IA qui agit</em></li><li>Membre bénévole d'un groupe de Smart Africa pour l'IA en Afrique</li></ul></details></div></li>
     </ol>
   </div>
 </section>
 
-<section class="section">
-  <div class="conteneur texte-long">
-    <p class="et">Et ensuite</p>
-    <h2>GakuTech, l'école que j'aimerais construire</h2>
-    <p>学 signifie «&nbsp;apprendre&nbsp;» en japonais. À terme, j'aimerais une école en ligne où des professionnels et des chercheurs en IA basés au Japon enseigneraient la data science et l'ingénierie IA ici, à un tarif accessible. Elle n'existe pas encore, et je n'en promets ni la date ni le contenu.</p>
+<!-- 4. GakuTech -->
+<figure class="citation-bandeau bandeau sur-bandeau gakutech">
+  <div class="conteneur revele">
+    <span class="kanji" aria-hidden="true">学</span>
+    <div>
+      <p class="et">Et ensuite · un rêve, pas une promesse</p>
+      <blockquote>GakuTech : des chercheurs en IA du Japon qui enseignent ici, à un prix accessible.</blockquote>
+      <figcaption>学 veut dire « apprendre » en japonais. L'école n'existe pas encore : je n'en promets ni la date ni le contenu.</figcaption>
+    </div>
   </div>
-</section>
+</figure>
 
+<!-- 5. Dernier appel -->
 <section class="appel bandeau sur-bandeau">
   <div class="conteneur">
     <h2>Recruteur, partenaire, entreprise&nbsp;?</h2>
@@ -93,6 +109,7 @@
   </div>
 </section>
 
+<script src="vivant.js"></script>
 </main>
 <footer class="pied bandeau sur-bandeau">
   <div class="conteneur">
